@@ -88,6 +88,4 @@ client.connect(err => {
 });
 
 
-app.listen(port, () => {
-    console.log("listen to port 4200")
-})
+app.listen(process.env.PORT || port);
